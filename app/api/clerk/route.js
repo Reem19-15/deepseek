@@ -20,7 +20,7 @@ export async function POST(req) {
 
   //prepare the user data to be stored in the database
 
-  const user = {
+  const userData = {
     _id: data.id,
     email: data.email_addresses[0].email_addresses,
     name: `${data.first_name} ${data.last_name}`,
